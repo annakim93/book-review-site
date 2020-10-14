@@ -1,0 +1,76 @@
+body {
+  color: black;
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+main {
+  margin-top: 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  font-size: 11px;
+}
+
+li:not(:first-child):before {
+  content: " | ";
+}
+
+a:link {
+  text-decoration: none;
+  color: #48494a;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #48494a;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+img {
+  height: 360px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+.column-2 {
+  float: left;
+  width: 48%;
+  padding: 5px;
+}
+
+.divider {
+  Float: left;
+  height: 360px;
+  width: 1px; /* edit this if you want */
+  background-color: #d4d6d9
+ } 
+
+.row {
+  margin-top: 25px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
