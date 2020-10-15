@@ -81,7 +81,7 @@ body {
 
 main {
   margin-top: 100px;
-  color: #f4f4f4;
+  color: #475158;
   text-align: center;
 }
 
@@ -91,14 +91,26 @@ ul {
   padding: 0;
 }
 
-li {
+section {
+  text-align: justify;
+  margin-top: 50px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+section li {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/*li {
   display: inline;
   font-size: 10px;
 }
 
 li:not(:first-child):before {
   content: " | ";
-}
+} */
 
 a:link {
   text-decoration: none;
@@ -148,6 +160,24 @@ img {
   float: left;
   width: 48%;
   padding: 5px;
+}
+
+.column-2 ul {
+  margin-top: 50px;
+}
+
+.column-2 li {
+  font-size: 16px;
+  /* color: #475158; */
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+hr {
+  margin-top: 50px;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 .divider {
