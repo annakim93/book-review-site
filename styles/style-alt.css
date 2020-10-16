@@ -1,7 +1,7 @@
 /* Helps visualize your boxes */
-* {
+/* * {
   border: black 1px solid;
-}
+} */
 
 body {
   color: black;
@@ -84,28 +84,10 @@ body {
 
 main {
   margin-top: 100px;
-  color: #475158;
   text-align: center;
 }
 
-section {
-  text-align: justify;
-  margin-top: 50px;
-  margin-left: 75px;
-  margin-right: 75px;
-}
-
-section li {
-  text-align: justify;
-  margin-top: 10px;
-}
-
-a:link {
-  text-decoration: none;
-  color: #48494a;
-}
-
-a:visited {
+a:link, a:visited {
   text-decoration: none;
   color: #48494a;
 }
@@ -135,33 +117,6 @@ img {
   display: table;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-/* .column {
-  position: relative;
-  float: left;
-  width: 32%;
-  padding: 5px;
-} */
-
-.column-2 {
-  position: relative;
-  float: left;
-  width: 48%;
-  padding: 5px;
-}
-
-.column-2 ul {
-  margin-top: 50px;
-}
-
-.column-2 li {
-  font-size: 16px;
-  /* color: #475158; */
-  text-align: left;
-  margin-top: 10px;
-  margin-left: 50px;
-}
-
 hr {
   margin-top: 50px;
   margin-left: 75px;
@@ -175,55 +130,51 @@ hr {
   background-color: #d4d6d9
  }
 
-.hover-middle {
-  /* transition: .5s ease; */
-  /* transition: visibility 0s, opacity 0.5s linear; */
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  /* text-align: center; */
+.container {
   display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: repeat(3, 425px);
+  grid-template-rows: auto 50px;
+  grid-gap: 5px, 5px;
   justify-content: center;
+  justify-items: center;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 425px);
+  grid-gap: 5px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.book {
+  display: grid;
+  justify-items: center;
   align-items: center;
-}
-
-.book:hover .hover-middle {
-  opacity: 0.8;
-}
-
-.column-2:hover .hover-middle {
-  opacity: 0.8;
+  position: relative;
 }
 
 .book:hover img {
   opacity: 0.3;
 }
 
-.column-2:hover img {
-  opacity: 0.3;
+.hover-middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.book:hover .hover-middle {
+  opacity: 0.8;
 }
 
 .hover-middle div {
   background-color: #d4d6d9;
   color: #48494a;
   font-size: 10px;
-  padding: 8px 32px;
-}
-
-.container {
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-  grid-template-columns: repeat(3, 425px);
-  grid-gap: 5px;
-  /* justify-content: center; */
-  justify-items: center;
-}
-
-.book {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  padding: 8px;
 }
