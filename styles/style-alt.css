@@ -1,7 +1,7 @@
 /* Helps visualize your boxes */
-/* * {
+* {
   border: black 1px solid;
-} */
+}
 
 body {
   color: black;
@@ -105,15 +105,6 @@ section li {
   text-align: justify;
   margin-top: 10px;
 }
-
-/*li {
-  display: inline;
-  font-size: 10px;
-}
-
-li:not(:first-child):before {
-  content: " | ";
-} */
 
 a:link {
   text-decoration: none;
@@ -248,4 +239,11 @@ hr {
   color: #48494a;
   font-size: 10px;
   padding: 8px 32px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 425px);
+  grid-gap: 5px;
+  border-color: black;
 }
