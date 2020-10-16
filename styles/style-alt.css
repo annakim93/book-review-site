@@ -107,17 +107,6 @@ img {
   backface-visibility: hidden;
 }
 
-.row {
-  margin-top: 25px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 hr {
   margin-top: 50px;
   margin-left: 75px;
